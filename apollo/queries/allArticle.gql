@@ -1,0 +1,18 @@
+{
+  getObjects(
+    bucket_slug: "loki-webinar-production",
+    read_key: "TMNjyVSNbfE75hA7q92OTZex74Ye5NuIn20DRWNroYgRGj4y9Y",
+    input: {
+    query: {
+      type: "posts"
+    }
+  }) {
+		          objects {
+                      id
+			          content
+			          title
+			          metadata
+		          }
+    	        }
+}
+        

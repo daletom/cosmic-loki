@@ -1,0 +1,18 @@
+{
+    "builds": [
+        {
+        "src": "nuxt.config.js",
+        "use": "@nuxtjs/vercel-builder",
+        "config": {}
+        }
+    ],
+    "routes": [
+        {
+          "src": "/*",
+            "headers": {
+              "Accept-CH": "DPR, Width, Viewport-Width",
+              "Feature-Policy": "ch-dpr https://imgix.cosmicjs.com 'self'; ch-width https://imgix.cosmicjs.com 'self'; ch-viewport-width https://imgix.cosmicjs.com 'self'"
+            }
+        }
+      ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "nuxt-cosmicjs",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/apollo": "^4.0.1-rc.5",
+    "core-js": "^3.8.2",
+    "cosmicjs": "^4.1.2",
+    "nuxt": "^2.14.12",
+    "vue-imgix": "^2.9.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^3.4.2"
+  }
+}
