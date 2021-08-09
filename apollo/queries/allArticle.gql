@@ -8,10 +8,11 @@
     }
   }) {
 		          objects {
-                      id
+                id
 			          content
 			          title
-			          metadata
+                metadata
+                slug
 		          }
     	        }
 }

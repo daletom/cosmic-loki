@@ -5,15 +5,16 @@
       v-for="article in data" 
       :key="article.id"
     >
-    <p class="text-2xl p-2" v-html="article.title"></p>
+      <nuxt-link :to="'/lokis/' + article.slug">
       <ix-img
         :src="article.metadata.avatar.imgix_url"
-        :imgixParams="{ fit: 'crop', mask: 'ellipse', crop: 'faces,edges', txt: `{{article.title}}`, 'txt-align': 'middle,center', 'txt-fit': 'max', 'txt-size': '72', 'txt-color': 'white', blend: 'https://demos.imgix.net/dark-ellipse-gradient.ai?fm=png&ar=2:1', 'blend-mode': 'multiply', 'blend-size': 'inherit' }"
+        :imgixParams="{ fit: 'crop', mask: 'ellipse', crop: 'faces,edges', txt: article.title, 'txt-align': 'middle,center', 'txt-fit': 'max', 'txt-size': '72', 'txt-color': 'white', blend: 'https://demos.imgix.net/dark-ellipse-gradient.ai?fm=png&ar=2:1', 'blend-mode': 'multiply', 'blend-size': 'inherit' }"
         width="500"
         height="500"
         fixed
         loading="lazy"
       />
+      </nuxt-link>
     </div>
   </div>
 </template>
