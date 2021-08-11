@@ -1,11 +1,11 @@
 <template>
   <div class="p-4">
-    <Articles v-bind:data="getObjects.objects" />
+    <Episodes v-bind:data="getObjects.objects" />
   </div>
 </template>
 
 <script>
-import getObjects from '../../apollo/queries/allArticle.gql'
+import getObjects from '../../apollo/queries/allEpisodes.gql'
 
 export default {
   apollo: {

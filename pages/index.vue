@@ -1,6 +1,6 @@
 <template>
   <div class="p-4">
-    <Hero />
+    <Header />
     <div class="flex flex-wrap">
     <nuxt-link
       to="/episodes"

@@ -1,11 +1,11 @@
 <template>
   <div class="p-4">
-    <Lokis v-bind:data="getObjects.objects" />
+    <Heroes v-bind:data="getObjects.objects" />
   </div>
 </template>
 
 <script>
-import getObjects from '../../apollo/queries/allLoki.gql'
+import getObjects from '../../apollo/queries/allHeroes.gql'
 
 export default {
   apollo: {
