@@ -4,7 +4,7 @@
     read_key: "TMNjyVSNbfE75hA7q92OTZex74Ye5NuIn20DRWNroYgRGj4y9Y",
     input: {
     query: {
-      type: "posts"
+      type: "episodes"
     }
   }) {
 		          objects {
