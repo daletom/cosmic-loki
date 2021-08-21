@@ -1,6 +1,6 @@
 <template>
   <div class="p-4">
-    <Heroes v-bind:data="getObjects.objects" />
+    <Hero v-bind:data="getObjects.objects" />
   </div>
 </template>
 
@@ -12,8 +12,10 @@ export default {
     getObjects: {
       prefetch: true,
       query: getObjects,
-      variables: {
-          slug: route.params.id
+      variables() {
+        return {
+          slug: this.$route.params.id || ''
+        }
       }
     }
   },
