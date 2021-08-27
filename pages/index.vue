@@ -1,49 +1,18 @@
 <template>
   <div class="p-4">
     <Header />
-    <div class="flex flex-wrap">
-    <nuxt-link
-      to="/episodes"
-      class="p-4 episode"
-    >
-    <p class="text-2xl p-2">Episodes</p>
-      <ix-img
-        src="https://imgix.cosmicjs.com/4fc12bd0-f731-11eb-a171-71d9db0ee496-episodes.jpeg?auto=format,compress&w=600&h=450&fit=crop"
-        width="600"
-        height="450"
-        loading="lazy"
-      />
-    </nuxt-link>
-    <nuxt-link
-      to="/lokis"
-      class="p-4 episode"
-    >
-    <p class="text-2xl p-2">The Lokis</p>
-      <ix-img
-        src="https://imgix.cosmicjs.com/4b4344d0-f731-11eb-a171-71d9db0ee496-thelokis.jpg?auto=format,compress&w=600&h=450&fit=crop"
-        width="600"
-        height="450"
-        loading="lazy"
-      />
-    </nuxt-link>
-    <nuxt-link
-      to="/about"
-      class="p-4 episode"
-    >
-    <p class="text-2xl p-2">About</p>
-      <video autoplay loop muted playsinline style="width: 600px; height: 450px">
-        <source
-          src="https://imgix.cosmicjs.com/4ba2f100-f731-11eb-a171-71d9db0ee496-lokiabout.gif?fm=mp4&w=600&h=450&fit=crop"
-          type="video/mp4"
-        >
-      </video>
-    </nuxt-link>
-  </div>
+    <Home v-bind:data="getObjects.objects" />
+    <SocialHead 
+    title="Loki Fan Site"
+    description="This is a fan site dedicated to the Loki TV series.  It also serves as a tutorial of how to build a fansite using Nuxt, Cosmic JS, imgix, Tailwind CSS, & Vercel."
+    image="https://imgix.cosmicjs.com/872d1500-f738-11eb-a171-71d9db0ee496-lokihero.jpeg"
+    />
   </div>
 </template>
 
 <script>
-/*import getObjects from '../apollo/queries/allArticle.gql'
+import getObjects from '../apollo/queries/allHomes.gql'
+
 
 export default {
   apollo: {
@@ -52,5 +21,5 @@ export default {
       query: getObjects
     }
   },
-};*/
+};
 </script>
