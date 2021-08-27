@@ -7,7 +7,7 @@
       >
         <ix-img
         class="lg:w-1/2 md:w-1/3 w-full"
-        :src="article.metadata.avatar.imgix_url"
+        :src="article.metadata.heroimage.imgix_url"
         loading="lazy"
         :imgixParams="{ fit: 'crop', ar: '1.8:1', crop: 'faces,edges' }"
         sizes="(min-width: 1024px) calc(60vw - 192px), 75vw"
@@ -21,7 +21,7 @@
         <SocialHead
       :title="article.title"
       :description="article.content"
-      :image="article.metadata.avatar.imgix_url"
+      :image="article.metadata.heroimage.imgix_url"
       />
       </div>
       </div>
@@ -29,7 +29,7 @@
 
 <script>
 export default {
-  name: 'Hero',
+  name: 'Episode',
   props: ['data']
 }
 </script>

@@ -11,7 +11,7 @@ export default {
   apollo: {
     getObjects: {
       prefetch: true,
-      query: getObjects
+      query: getObjects,
     }
   },
 };
